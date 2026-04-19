@@ -34,7 +34,7 @@ VulnGuard is a web vulnerability scanner designed to detect common security issu
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/VulnGuard.git
+git clone https://github.com/EnukaSathmina/VulnGuard.git
 cd VulnGuard
 ```
 
