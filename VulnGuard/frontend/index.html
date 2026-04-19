@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VulnGuard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>🔐 VulnGuard</h2>
+
+    <button onclick="resetStats()">Reset Stats</button>
+    <button onclick="loadStats()">Refresh Stats</button>
+
+    <div class="mini-stats">
+      <p>📊 Scans: <span id="totalScans">0</span></p>
+      <p>🚨 XSS: <span id="xssCount">0</span></p>
+      <p>💉 SQLi: <span id="sqliCount">0</span></p>
+      <p>ℹ️ Info: <span id="infoCount">0</span></p>
+    </div>
+
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <h1>VulnGuard</h1>
+
+    <div class="scan-box">
+      <input id="urlInput" placeholder="Enter target URL">
+      <button onclick="startScan()">Start Scan</button>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <p id="status">Idle...</p>
+
+    <!-- TERMINAL -->
+    <div class="terminal" id="terminal"></div>
+
+    <!-- RESULTS -->
+    <div id="results"></div>
+
+    <!-- GRAPH -->
+    <h3>🌐 Live Network Graph</h3>
+    <canvas id="netCanvas"></canvas>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

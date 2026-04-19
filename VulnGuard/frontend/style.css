@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b1220;
+  color: white;
+}
+
+.layout {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  height: 100vh;
+  padding: 15px;
+}
+
+.sidebar h2 {
+  color: #38bdf8;
+}
+
+.sidebar button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  color: #38bdf8;
+}
+
+/* INPUT */
+.scan-box {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PROGRESS */
+.progress {
+  width: 100%;
+  height: 14px;
+  background: #1f2937;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  transition: width 0.3s;
+}
+
+/* TERMINAL */
+.terminal {
+  background: #0a0f1a;
+  color: #00ff99;
+  height: 140px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: monospace;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+}
+
+/* hide when empty */
+.terminal:empty {
+  display: none;
+}
+
+/* RESULTS */
+.card {
+  background: #1f2937;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.xss { border-left: 4px solid orange; }
+.sql { border-left: 4px solid yellow; }
+.info { border-left: 4px solid #38bdf8; }
+.error { border-left: 4px solid red; }
+
+/* GRAPH */
+#netCanvas {
+  width: 100%;
+  height: 320px;
+  background: #0b0f19;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  display: block;
+}
