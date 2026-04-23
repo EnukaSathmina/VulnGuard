@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ## ▶️ Running VulnGuard
 ### 1. Start the backend server
 ```bash
-uvicorn main:app --reload
+py run.py
 ```
 
 ### 2. Run the frontend
